@@ -10,6 +10,10 @@ public class Background {
             System.out.println("This is thread 2");
         });
 
+        t1.setDaemon(true);
+        t2.setDaemon(true);
+
+        Thread.sleep(10000);
         t1.start();
         t2.start();
         System.out.println("Main process");

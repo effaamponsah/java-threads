@@ -26,7 +26,8 @@ def apps = [
 
         'BlockingQueue': 'io.turntabl.execution.producerconsumer.Driver',
         'BarrierRace': 'io.turntabl.execution.barriers.BarrierRace',
-        'Background':  'io.turntabl.my.Background'
+        'Background':  'io.turntabl.my.Background',
+        'Collection':   'io.turntabl.my.Collection'
         ]
 
 apps.each() { appName, className ->

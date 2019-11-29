@@ -11,11 +11,17 @@ public class Account {
   }
   
   public void Deposit(int amount){
-    balance += amount;
+    synchronized (lock){
+      balance += amount;
+
+    }
   }
   
-  public void Withdraw(int amount){
-    balance -= amount;
+  public synchronized void Withdraw(int amount){
+    synchronized (lock){
+      balance -= amount;
+
+    }
   }
   
   public static void main(String[] args) throws Exception{

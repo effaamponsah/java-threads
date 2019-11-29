@@ -17,7 +17,7 @@ public class Background {
         t1.start();
         t2.start();
         System.out.println("Main process");
-        t1.join();
-        t2.join();
+//        t1.join();
+//        t2.join();
     }
 }
